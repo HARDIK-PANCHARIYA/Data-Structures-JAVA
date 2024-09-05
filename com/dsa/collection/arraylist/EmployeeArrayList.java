@@ -1,6 +1,8 @@
 package com.dsa.collection.arraylist;
 
-public class EmployeeArrayList {
+import java.util.Comparator;
+
+public class EmployeeArrayList implements Comparable<EmployeeArrayList>,Comparator<EmployeeArrayList> {
 	
 	private int eid;
 	private String ename;
@@ -50,6 +52,21 @@ public class EmployeeArrayList {
 	public String toString() {
 		return "[eid=" + eid + ", ename=" + ename + ", esalary=" + esalary + ", edesignation="
 				+ edesignation + "]";
+	}
+
+	@Override
+	//Comparable
+	public int compareTo(EmployeeArrayList o) {
+		Integer a=this.getEid();
+		Integer b=o.getEid();
+		return a.compareTo(b);
+	}
+
+	@Override
+	//Comparator
+	public int compare(EmployeeArrayList o1, EmployeeArrayList o2) {
+		
+		return 0;
 	}
 	
 	
