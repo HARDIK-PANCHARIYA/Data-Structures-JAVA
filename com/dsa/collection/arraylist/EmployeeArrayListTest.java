@@ -39,19 +39,18 @@ public class EmployeeArrayListTest {
 		System.out.println("=========================");
 		
 		
-		
 		// increase the salary by 10%
 		for(EmployeeArrayList e : al) {
 			e.setEsalary(e.getEsalary()*1.10);	
 		}
+		
+		
 		// iterate the object one by one 
-		// using for loop
+		// using enhance for loop
 		for(EmployeeArrayList e : al) {
 			System.out.println(e);
 		}
 		System.out.println("=========================");
-		
-		
 		
 	}
 
