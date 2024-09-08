@@ -20,6 +20,7 @@ public class VectorDemo1 {
 	// add element in vector ---- addElement()
 	v.addElement(50);
 	v.addElement(60);
+	v.addElement(60);
 	
 	
 	// add element in vector at particular index ---- add(index,object) 
